@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../css/output.css" rel="stylesheet" />
+    <title>HORO website</title>
+  </head>
+
+  <body class="bg-[#e2af90]">
+    <!-- // navigator -->
+    <div class="z-99 fixed left-0 right-0 top-0 mt-2 mx-10 pb-20">
+      <div class="rounded-3xl navbar bg-[#93513b]/70">
+        <div class="navbar-start">
+          <a
+            class="btn btn-ghost normal-case text-xl text-[#dfd9d5]"
+            href="../../index.html"
+            >赫萝的小站</a
+          >
+        </div>
+        <div class="navbar-end flex">
+          <ul class="menu menu-horizontal p-0 text-white text-xl">
+            <li>
+              <a
+                class="active:bg-[#e2af90] active:text-[#f78d6a8e] gap-3 rounded-md hover:bg-[#e2af90]/60 duration-500"
+                href="../horo/index.html"
+                >赫萝</a
+              >
+            </li>
+            <li>
+              <a
+                class="active:bg-[#e2af90] active:text-[#f78d6a8e] gap-3 rounded-md hover:bg-[#e2af90]/60 duration-500"
+                href="../muili/index.html"
+              >
+                缪莉</a
+              >
+            </li>
+            <li>
+              <a
+                class="active:bg-[#e2af90] active:text-[#f78d6a8e] gap-3 rounded-md hover:bg-[#e2af90]/60 duration-500"
+                href="../lawlansi/index.html"
+                >罗伦斯</a
+              >
+            </li>
+            <li>
+              <a
+                class="active:bg-[#e2af90] active:text-[#f78d6a8e] gap-3 rounded-md hover:bg-[#e2af90]/60 duration-500"
+                href="#"
+                >给赫萝留言</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- // global container -->
+
+
+    <!-- // global container -->
+    <div
+      class="min-h-screen bg-[#e2af90] py-20 flex flex-col space-y-10 items-center justify-center"
+    >
+    <div class="alert alert-success shadow-lg bg-green-500 justify-center items-center max-w-lg hidden duration-300" id="alert">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        <span>Thanks for your feedback!!</span>
+      </div>
+    </div>
+
+      <!-- // submit  -->
+      <div
+        class="bg-[#702b00] flex flex-col space-y-6 transition-all duration-500 p-16 py-44 md:py-20 md:p-20 md:scale-125 rounded-2xl text-base-content"
+      >
+        <h3 class="text-3xl text-center font-bold text-white">给赫萝留言</h3>
+        <div class="form-control w-full max-w-xs">
+          <label class="label">
+            <span class="badge badge-accent bg-[#e2af90]">你的邮箱</span>
+          </label>
+          <input class="input w-full max-w-xs" placeholder="你的邮箱" />
+        </div>
+
+        <div class="form-control w-full max-w-xs">
+          <label class="label">
+            <span class="badge badge-accent bg-[#e2af90]">你的留言</span>
+          </label>
+          <textarea
+            class="textarea textarea-warning rounded"
+            placeholder="你的留言"
+          ></textarea>
+        </div>
+
+        <div class="form-control w-full max-w-xs">
+          <label class="label">
+            <span class="badge badge-accent bg-[#e2af90]">你的评分</span>
+          </label>
+          <div class="rating gap-1">
+            <input
+              type="radio"
+              name="rating-3"
+              class="mask mask-heart bg-red-400"
+            />
+            <input
+              type="radio"
+              name="rating-3"
+              class="mask mask-heart bg-orange-400"
+              checked
+            />
+            <input
+              type="radio"
+              name="rating-3"
+              class="mask mask-heart bg-yellow-400"
+            />
+            <input
+              type="radio"
+              name="rating-3"
+              class="mask mask-heart bg-lime-400"
+            />
+            <input
+              type="radio"
+              name="rating-3"
+              class="mask mask-heart bg-green-400"
+            />
+          </div>
+        </div>
+
+        <button class="btn text-white bg-[#e2af90]" type="button" id="submit">提交</button>
+        <!-- // global container -->
+        <script>
+          const alert = document.getElementById("alert");
+          const btn = document.getElementById("submit")
+          btn.addEventListener("click", () => {
+            // reveal the hidden content
+            alert.classList.remove("hidden")
+            setTimeout(()=>{
+              // hidden
+              alert.classList.add("hidden")
+            },1000)
+          })
+          console.log(alert,btn)
+        </script>
+      </div>
+      <!-- // global container -->
+
+    <!-- // footer  -->
+    <footer
+      class="z-1 fixed opacity-90 bottom-0 left-0 right-0 bg-[#963a01] footer footer-center p-4 text-base-content"
+    >
+      <div class="pb-0 flex space-x-6 text-white">
+        <div>
+          Copyright © 2022 - All right reserved by FUZHEN
+          <div class="badge badge-info bg-[#e2af90] gap-2">赫萝的小站</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

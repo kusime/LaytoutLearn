@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <title>Simple Tailwind Starder</title>
+  </head>
+  <body class="">
+    <!-- global container -->
+    <div
+      class="min-h-screen w-full  bg-gradient-to-bl from-[#fa84b4] to-[#ffb98f]  flex justify-center items-center "
+    >
+      <!-- card container  -->
+      <div
+        class="translate-y-10 relative w-[350px] h-[190px] hover:h-[450px] duration-700 bg-white rounded-2xl drop-shadow-xl shadow-2xl group"
+      >
+        <!-- card img container -->
+        <div
+          class="absolute w-[150px] h-[150px] bg-black left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-2xl shadow-2xl overflow-hidden group-hover:w-[250px] group-hover:h-[250px] duration-500"
+        >
+          <!-- // image -->
+          <img
+            src="./css/img.png"
+            alt=""
+            class="top-0 left-0 absolute object-cover h-full w-full"
+          />
+        </div>
+
+        <!-- content outer cutter -->
+        <div class="overflow-hidden w-full h-full absolute group">
+                  <!-- card content container -->
+          <div
+            class="translate-y-[5rem] group-hover:translate-y-[10rem] duration-500 flex flex-col justify-end items-center pb-[40px] space-y-5"
+          >
+            <!-- details container -->
+            <div class="w-full flex flex-col items-center">
+              <h1 class="text-[38px] font-sans text-gray-600">Kusime Build</h1>
+              <h2 class="text-[26px] font-sans text-gray-600 opacity-75">
+                Senior UX/UI Designer
+              </h2>
+            </div>
+
+            <!-- data container -->
+            <div class="flex w-full justify-around items-center">
+              <!-- posts -->
+              <div class="flex flex-col w-full items-center">
+                <h1 class="text-2xl font-sans text-gray-600">342</h1>
+                <h2 class="text-xl font-sans text-gray-600 opacity-75">
+                  Posts
+                </h2>
+              </div>
+
+              <!-- Followers -->
+              <div class="flex flex-col w-full items-center">
+                <h1 class="text-2xl font-sans text-gray-600">120k</h1>
+                <h2 class="text-xl font-sans text-gray-600 opacity-75">
+                  Followers
+                </h2>
+              </div>
+
+              <!-- Following -->
+              <div class="flex flex-col w-full items-center">
+                <h1 class="text-2xl font-sans text-gray-600">285</h1>
+                <h2 class="text-xl font-sans text-gray-600 opacity-75">
+                  Following
+                </h2>
+              </div>
+            </div>
+
+            <!-- card button container -->
+            <div class="w-full flex justify-between px-[1.75rem] items-center">
+              <button
+                class="bg-[#ff679c] border border-[#ff679c] outline-none rounded-md text-white px-[40px] py-[10px] hover:border-[#d4d2d4] hover:bg-transparent hover:text-[#d4d2d4] duration-500"
+              >
+                Follow
+              </button>
+
+              <button
+                class="bg-[#ff679c] border border-[#ff679c] outline-none rounded-md text-white px-[40px] py-[10px] hover:border-[#d4d2d4] hover:bg-transparent hover:text-[#d4d2d4] duration-500"
+              >
+                Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

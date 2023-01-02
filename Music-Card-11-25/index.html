@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <title>MusicCard 11-25</title>
+  </head>
+  <body class=" bg-[#7a4240]">
+    <!-- // global contaier -->
+    <div class="h-screen w-full flex flex-row justify-center items-center">
+      <!-- // left container -->
+      <div
+        class="flex flex-col space-y-3 items-center justify-center w-[400px] h-[400px] "
+      >
+        <img src="./assest/title.png" class="w-[17rem] translate-y-[-1rem]" alt="" />
+        <img src="./assest/singer.png" class="w-[16rem] translate-y-[0.5rem]" alt="" />
+        <img src="./assest/lricy.png" class="w-[16rem] translate-y-[3rem]" alt="">
+      </div>
+      <!-- // cover contienr -->
+      <div class="">
+        <img src="./assest/Cover.png" class="w-[400px] shadow-2xl" alt="" />
+      </div>
+    </div>
+
+    <!-- // left indicator -->
+    <div class="absolute flex justify-center left-0 top-0 bottom-0 items-center ">
+      <img src="./assest/right.png" class="object-cover" alt="">
+    </div>
+    <!-- // right indicator -->
+    <div class="absolute flex justify-center right-0 top-0 bottom-0 items-center ">
+      <img src="./assest/left.png" class="object-cover" alt="">
+    </div>
+    <!-- // audio indicator  -->
+    <footer class="absolute bottom-0 left-0 right-0 pb-4 flex items-center justify-start pl-4">
+      <img src="./assest/audio.png" class="object-cover w-[50px] h-[100px] translate-x-[1rem]" alt="">
+    </footer>
+  </body>
+</html>
